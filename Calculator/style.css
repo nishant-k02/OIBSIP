@@ -1,4 +1,4 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Quickstand:wght@300;400;500&display=sw');
 
 *
 {
@@ -7,6 +7,13 @@
     box-sizing: border-box;
     font-family: 'Quickstand', sans-serif;
 }
+h1
+{
+    color: grey;
+    align-items: center;
+    margin-left: -150%;
+    margin-top: -130%;
+}
 
 body
 {
@@ -14,7 +21,10 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #091921;
+    background: url('https://cdn.wallpapersafari.com/29/31/XO4GTC.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    
 }
 
 body::before
@@ -25,8 +35,8 @@ body::before
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#ffffff , #da00ff);
-    clip-path: circle(20% at 30% 20%);
+    /* background: linear-gradient(#ffffff , #da00ff);
+    clip-path: circle(20% at 30% 20%); */
 }
 
 body::after
@@ -37,8 +47,8 @@ body::after
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#ffffff , #da00ff);
-    clip-path: circle(20% at 70% 90%);
+    /* background: linear-gradient(#ffffff , #da00ff);
+    clip-path: circle(20% at 70% 90%); */
 }
 
 .container 
@@ -48,10 +58,12 @@ body::after
     border-radius: 6px;
     overflow: hidden;
     z-index: 10;
-    backdrop-filter: blur(30px);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 50px rgba(45,42,63, 5);
+    margin-left: -160px;
+    /* border-color: grey; */
+    border-radius: 10px;
 }
 
 .container .calculator
@@ -69,9 +81,9 @@ body::after
     border: none;
     outline: none;
     padding: 10px;
-    font-size: 30px;
-    background: transparent;
-    color: #fff;
+    font-size: 60px;
+    background: grey;
+    color: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -99,3 +111,27 @@ body::after
     font-weight: 600;;
 }
 
+.container .calculator .clear
+{
+    grid-column: span 2;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.container .calculator .plus
+{
+    grid-row: span 2;
+    height: 150px;
+}
+
+.container .calculator .equal
+{
+    grid-column: span 2;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+      
+  
