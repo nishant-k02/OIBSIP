@@ -35,8 +35,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        /* background: linear-gradient(#ffffff , #da00ff);
-        clip-path: circle(20% at 30% 20%); */
     }
 
     body::after
@@ -47,8 +45,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        /* background: linear-gradient(#ffffff , #da00ff);
-        clip-path: circle(20% at 70% 90%); */
     }
 
     .container 
@@ -99,7 +95,7 @@
         cursor: pointer;
         font-size: 20px;
         user-select: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px  solid rgba(255, 255, 255, 0.05);
         border-right: 1px solid rgba(255, 255, 255, 0.05);
     }
 
@@ -130,3 +126,97 @@
         width: 150px;
         background: rgba(255, 255, 255, 0.1);
     }
+
+    @media (max-width: 790px) 
+  {
+
+    .container 
+    {
+        /* width:250px; */
+        /* height: 350px; */
+        margin-left: -52%;
+    }
+
+    h1  
+    {
+        margin-left: -20%;
+        margin-top: -130%;  
+        text-align: center; 
+    }
+
+    /* .container .calculator .num 
+    {
+        width: 30px;
+        height: 55px;
+    } */
+
+    .container .calculator .value
+    {
+        grid-column: span 4;
+        height: 95px;
+        width: 300px;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 35px;
+        background: grey;
+        color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    
+    .container .calculator span
+    {
+        display: grid;
+        place-items: center;
+        height: 75px;
+        width: 75px;
+        color: #fff;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 20px;
+        user-select: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .container .calculator
+    {
+        position: relative;
+        display: grid;
+        margin-top: -25px;
+    }
+
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('https://cdn.wallpapersafari.com/29/31/XO4GTC.jpg') center;
+        background-size: cover;
+        background-size: 290%;
+        background-position: 80% 80%;   
+    }
+
+    /* .container .calculator .clear
+    {
+        grid-column: span 2;
+        width: 50px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .container .calculator .plus
+    {
+        grid-row: span 2;
+        height: 100px;
+    }
+    .container .calculator .num
+    {
+        width: 40%;
+    } */
+
+}
