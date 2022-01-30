@@ -127,7 +127,7 @@
         background: rgba(255, 255, 255, 0.1);
     }
 
-    @media (max-width: 790px) 
+    @media  (max-width: 600px) 
   {
 
     .container 
@@ -219,4 +219,111 @@
         width: 40%;
     } */
 
+}
+
+@media (min-width: 600px) and (max-width: 750px) 
+{
+    .container 
+    {
+        /* width:250px; */
+        /* height: 350px; */
+        /* margin-left: -52%; */
+    }   
+
+    .container .calculator .value
+    {
+        grid-column: span 4;
+        height: 95px;
+        width: 300px;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 35px;
+        background: grey;
+        color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .container .calculator
+    {
+        position: relative;
+        display: grid;
+        margin-top: -25px;
+    }
+
+    h1  
+    {
+        margin-left: -60%;
+        margin-top: -130%;  
+        text-align: center; 
+    }
+
+}
+
+@media (min-width: 750px) and (max-width: 950px)
+{
+    .container .calculator .value
+    {
+        grid-column: span 4;
+        height: 95px;
+        width: 300px;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 35px;
+        background: grey;
+        color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .container .calculator
+    {
+        position: relative;
+        display: grid;
+        margin-top: -25px;
+    }
+
+    h1  
+    {
+        margin-left: -130%;
+        margin-top: -130%;  
+        text-align: center; 
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1435px)
+{
+    .container .calculator .value
+    {
+        grid-column: span 4;
+        height: 95px;
+        width: 300px;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 35px;
+        background: grey;
+        color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .container .calculator
+    {
+        position: relative;
+        display: grid;
+        margin-top: -25px;
+    }
+
+    h1  
+    {
+        margin-left: -170%;
+        margin-top: -130%;  
+        text-align: center; 
+    }
 }
